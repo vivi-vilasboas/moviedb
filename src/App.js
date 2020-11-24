@@ -8,7 +8,6 @@ import {
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GenreList from "./components/GenreList";
-import MovieList from "./components/MovieList";
 
 import MovieDetail from "./pages/MovieDetail";
 import Home from "./pages/Home";
@@ -18,7 +17,7 @@ import Search from "./pages/Search";
 function App() {
    return (
     <>
-      <Header></Header>
+      <Header />
 
       <Router>
         <Switch>
@@ -34,10 +33,6 @@ function App() {
             <Search />
           </Route>
 
-          <Route path="/movie-list" >
-            <MovieList />
-          </Route>
-
           <Route path="/about" >
             <About />
           </Route>
@@ -48,7 +43,7 @@ function App() {
         </Switch>
       </Router>
 
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
