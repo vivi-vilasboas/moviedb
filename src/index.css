@@ -147,21 +147,22 @@ nav ul li a {
     text-align: center;
     display: block;
     background-color: var(--dark);
-    margin: 15px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
     transition: all .2s ease;
+    text-decoration: none;
+    color: var(--light);
+    font-size: 20px;
+    border: 2px solid transparent;
 }
 
 .genre-list li:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-}
-
-.genre-list li a {
-    text-decoration: none;
-    color: var(--light);
-    font-size: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    color: var(--very-dark);
+    background-color: var(--grey);
+    border: 2px solid var(--very-dark);
 }
 
 .section-title {
@@ -416,11 +417,13 @@ footer {
 }
 
 .about h1 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 30px;
 }
 
 .about p {
     margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .about a {
